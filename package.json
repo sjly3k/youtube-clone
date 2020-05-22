@@ -1,0 +1,10 @@
+{
+  "name": "youtube-clone",
+  "version": "1.0.0",
+  "description": "Cloning Youtube With Vanila and NodeJS",
+  "main": "index.js",
+  "author": "SJ LEE",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
