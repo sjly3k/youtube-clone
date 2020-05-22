@@ -5,6 +5,15 @@
   "main": "index.js",
   "author": "SJ LEE",
   "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
     "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
