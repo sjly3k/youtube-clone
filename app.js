@@ -17,6 +17,7 @@ const app = express();
 middleware가 app.send 하면 연결을 끊을 수 있음 */
 app.use(helmet());
 app.set("view engine", "pug");
+app.use("/uploads", express.static("uploads")) 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
