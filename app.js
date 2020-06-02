@@ -4,12 +4,12 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 
-import userRouter from "./routers/userRouter"
-import videoRouter from "./routers/videoRouter"
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
-import routes from "./routes"
+import routes from "./routes";
 
-import { localsMiddleware } from "./middlewares"
+import { localsMiddleware } from "./middlewares";
 
 const app = express();
 
@@ -17,7 +17,8 @@ const app = express();
 middleware가 app.send 하면 연결을 끊을 수 있음 */
 app.use(helmet());
 app.set("view engine", "pug");
-app.use("/uploads", express.static("uploads")) 
+app.use("/uploads", express.static("uploads"));
+app.use("/static", express.static("static"));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
